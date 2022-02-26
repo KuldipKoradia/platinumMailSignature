@@ -26,9 +26,26 @@
 		display: table;
 		box-sizing: border-box;
 	}
-	.logo_image img {
-		max-width: 110px;
+	.email_templete > img {
+		width: 300px;
+		height: 300px;
+		display: table;
+		float: left;
+		box-sizing: border-box;
+	}
+	.email_templete .email_templete_content_sec {
+		margin-top: -300px;
+		float: left;
+		display: table;
+		box-sizing: border-box;
+		width: 300px;
+		height: 300px;
+	}
+	.logo_image {
+		width: 110px;
 		margin: 10px 8px;
+		box-sizing: border-box;
+		float: left;
 	}
 	.email_templete_content {
 		width: 100%;
@@ -36,6 +53,7 @@
 		margin: 35px 50px 0;
 		display: table;
 		box-sizing: border-box;
+		float: left;
 	}
 	.email_templete_content h1 {
 		color: #D3AF37;
@@ -92,11 +110,14 @@
 	}
 	ul.email_templete_icons {
 		display: table;
-		margin: 30px 6px 0 auto;
+		margin-top: 35px;
+		margin-right: 6px;
+		float: right;
 	}
 	ul.email_templete_icons li {
 		margin: 0 5px;
 		display: inline-block;
+		float: left;
 	}
 	ul.email_templete_icons li a {
 		background-color: #D3AF37;
@@ -118,36 +139,37 @@
 </style>
 </head>
 <body>
-	<div class="email_templete" style="background-image: url(bg_image.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-		<a href="#" class="logo_image">
-			<img src="logo.png">
-		</a>
-		<div class="email_templete_content">
-			<h1>ALEX PEDLEY</h1>
-			<p>DIRECTOR</p>
-			<ul class="email_templete_content_list">
+	<div class="email_templete">
+		<img src="bg_image.png">
+		<div class="email_templete_content_sec">
+			<img src="logo.png" class="logo_image">
+			<div class="email_templete_content">
+				<h1>ALEX PEDLEY</h1>
+				<p>DIRECTOR</p>
+				<ul class="email_templete_content_list">
+					<li>
+						<a href="tel:7834685780"><span><img src="call_icon.png"></span>+44 7834 685780</a>
+					</li>
+					<li>
+						<a href="www.platform-oms.co.uk."><span><img src="map_icon.png"></span>www.platform-oms.co.uk.</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="email_templete_icons">
 				<li>
-					<a href="tel:7834685780"><span><img src="call_icon.png"></span>+44 7834 685780</a>
+					<a href="#"><img src="in_icon.png"></a>
 				</li>
 				<li>
-					<a href="www.platform-oms.co.uk."><span><img src="map_icon.png"></span>www.platform-oms.co.uk.</a>
+					<a href="#"><img src="twitter_icon.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="fb_icon.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="insta_icon.png"></a>
 				</li>
 			</ul>
 		</div>
-		<ul class="email_templete_icons">
-			<li>
-				<a href="#"><img src="in_icon.png"></a>
-			</li>
-			<li>
-				<a href="#"><img src="twitter_icon.png"></a>
-			</li>
-			<li>
-				<a href="#"><img src="fb_icon.png"></a>
-			</li>
-			<li>
-				<a href="#"><img src="insta_icon.png"></a>
-			</li>
-		</ul>
 	</div>
 </body>
 </html>
