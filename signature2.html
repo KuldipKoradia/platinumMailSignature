@@ -21,23 +21,39 @@
 		padding: 0;
 	}
 	.email_templete {
-		background-image: url(bg_image_2.png);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		width: 300px;
 		height: 300px;
-		position: relative;
+		display: table;
+		box-sizing: border-box;
 	}
-	.logo_image img {
-		max-width: 72px;
+	.email_templete > img {
+		width: 300px;
+		height: 300px;
+		display: table;
+		float: left;
+		box-sizing: border-box;
+	}
+	.email_templete .email_templete_content_sec {
+		margin-top: -300px;
+		float: left;
+		display: table;
+		box-sizing: border-box;
+		width: 300px;
+		height: 300px;
+	}
+	.logo_image {
+		width: 72px;
 		margin: 0px 8px;
+		box-sizing: border-box;
+		float: left;
 	}
 	.email_templete_content {
 		width: 100%;
 		max-width: 200px;
-		margin: 0 50px 0 auto;
+		margin: 0px 50px 0;
 		display: table;
+		box-sizing: border-box;
+		float: left;
 	}
 	.email_templete_content h1 {
 		color: #231F20;
@@ -46,9 +62,12 @@
 		letter-spacing: 1px;
 		margin: 0;
 	}
+	.email_templete_content .gradent_image {
+		width: 200px;
+		margin-top: 8px;
+	}
 	.email_templete_content p {
-		margin: 8px 0 0;
-		background-color: #EFD69E;
+		margin: -34px 0 0;
 		color: #231F20;
 		font-weight: 400;
 		font-size: 16px;
@@ -86,68 +105,33 @@
 		left: 0;
 		bottom: 0;
 		margin: auto;
+		box-sizing: border-box;
 	}
 	ul.email_templete_content_list li a span img {
 		max-width: 10px;
 		margin: auto;
 	}
-	ul.email_templete_icons {
-		display: table;
-		margin: 30px 6px 0 auto;
-	}
-	ul.email_templete_icons li {
-		margin: 0 5px;
-		display: inline-block;
-	}
-	ul.email_templete_icons li a {
-		background-color: #808285;
-		border-radius: 50%;
-		width: 26px;
-		height: 26px;
-		text-align: center;
-		line-height: 23px;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-	}
-	ul.email_templete_icons li a img {
-		max-width: 12px;
-		max-height: 12px;
-	}
 </style>
 </head>
 <body>
 	<div class="email_templete">
-		<a href="#" class="logo_image">
-			<img src="logo_2.png">
-		</a>
-		<div class="email_templete_content">
-			<h1>ALEX PEDLEY</h1>
-			<p>DIRECTOR</p>
-			<ul class="email_templete_content_list">
-				<li>
-					<a href="tel:7834685780"><span><img src="call_icon.png"></span>+44 7834 685780</a>
-				</li>
-				<li>
-					<a href="www.platform-oms.co.uk."><span><img src="map_icon.png"></span>www.platform-oms.co.uk.</a>
-				</li>
-			</ul>
+		<img src="bg_image_2.png">
+		<div class="email_templete_content_sec">
+			<img src="logo_2.png" class="logo_image">
+			<div class="email_templete_content">
+				<h1>ALEX PEDLEY</h1>
+				<img src="gradent_image.png" class="gradent_image">
+				<p>DIRECTOR</p>
+				<ul class="email_templete_content_list">
+					<li>
+						<a href="tel:7834685780"><span><img src="call_icon.png"></span>+44 7834 685780</a>
+					</li>
+					<li>
+						<a href="www.platform-oms.co.uk."><span><img src="map_icon.png"></span>www.platform-oms.co.uk.</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<ul class="email_templete_icons">
-			<li>
-				<a href="#"><img src="in_icon.png"></a>
-			</li>
-			<li>
-				<a href="#"><img src="twitter_icon.png"></a>
-			</li>
-			<li>
-				<a href="#"><img src="fb_icon.png"></a>
-			</li>
-			<li>
-				<a href="#"><img src="insta_icon.png"></a>
-			</li>
-		</ul>
 	</div>
 </body>
 </html>
