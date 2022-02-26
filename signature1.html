@@ -21,13 +21,10 @@
 		padding: 0;
 	}
 	.email_templete {
-		background-image: url(bg_image.png);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		width: 300px;
 		height: 300px;
-		position: relative;
+		display: table;
+		box-sizing: border-box;
 	}
 	.logo_image img {
 		max-width: 110px;
@@ -38,6 +35,7 @@
 		max-width: 200px;
 		margin: 35px 50px 0 auto;
 		display: table;
+		box-sizing: border-box;
 	}
 	.email_templete_content h1 {
 		color: #D3AF37;
@@ -86,6 +84,7 @@
 		left: 0;
 		bottom: 0;
 		margin: auto;
+		box-sizing: border-box;
 	}
 	ul.email_templete_content_list li a span img {
 		max-width: 10px;
@@ -110,6 +109,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
+		box-sizing: border-box;
 	}
 	ul.email_templete_icons li a img {
 		max-width: 12px;
@@ -118,7 +118,7 @@
 </style>
 </head>
 <body>
-	<div class="email_templete">
+	<div class="email_templete" style="background-image: url(bg_image.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
 		<a href="#" class="logo_image">
 			<img src="logo.png">
 		</a>
