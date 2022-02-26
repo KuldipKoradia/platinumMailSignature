@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+}
+body *{
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+.email_signature {
+	box-sizing: border-box;
+	display: inline-block;
+	width: auto;
+	min-width: 250px;
+	max-width: 250px;
+}
+.name_with_content {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+}
+.email_profile {
+	box-sizing: border-box;
+	height: 54px;
+	width: 54px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	border: 4px solid rgba(23, 147, 206, 0.5);
+}
+.email_profile img {
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 7px;
+	bottom: 0;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	margin: auto;
+}
+.email_content {
+	box-sizing: border-box;
+	float: left;
+	padding-left: 7px;
+}
+.email_content h2{
+	margin: 0px;
+	color: #1793ce;
+	font-size: 20px;
+	line-height: 24px;
+}
+.email_content p{
+	font-size: 13px;
+	color: #878787;
+	margin: 0;
+}
+.email_signature ul {
+	box-sizing: border-box;
+	margin: 5px 0px 0px;
+	padding: 0px;
+	border-top: 1px solid #1793ce;
+	display: table;
+	width: 100%;
+	float: left;
+}
+.email_signature ul li {
+	padding-top: 4px;
+	list-style: none;
+	font-size: 13px;
+	box-sizing: border-box;
+	line-height: 18px;
+}
+.email_signature ul li:last-child{
+	padding-top: 0px;
+}
+.email_signature ul li a {
+	box-sizing: border-box;
+	color: #1793ce;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div class="email_signature">
+		<div class="name_with_content">
+			<div class="email_profile">
+				<img src="me.jpg" alt="profile picture">
+			</div>
+			<div class="email_content">
+				<h2>Kuldip Koradia</h2>
+				<p>Sr. Web Designer</p>
+				<p>Rao Information Technology</p>
+			</div>
+		</div>
+		<ul>
+			<li style="margin: 0 !important;">
+				<strong>Mobile: </strong><a href="tel:+919428732907" style="text-decoration: none !important;">+919428732907</a>
+			</li>
+			<li style="margin: 0 !important;">
+				<strong>Email: </strong><a href="mailto:kuldippatel1128@gmail.com" style="text-decoration: none !important;">kuldippatel1128@gmail.com</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
