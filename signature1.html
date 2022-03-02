@@ -17,82 +17,113 @@
 			list-style: none;
 			margin: 0;
 			padding: 0;
-		}/*
+		}
 		.email_templete {
-			
+			display: table;
+			box-sizing: border-box;
 		}
 		.email_templete table {
-			
+			width: 100%;
+			border-collapse: collapse;
 		}
 		.email_templete table td.content_row {
-			
+			padding-left: 30px;
+			border-left: 2px solid #d4af36;
 		}
 		.email_templete table td.image_row {
-			
+			padding-right: 30px;
 		}
 		.email_templete img.logo_image {
-			
+			width: 200px;
+			float: left;
 		}
 		.email_templete_content h1 {
-			
+			color: #D3AF37;
+			font-size: 24px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			margin: 0;
+			white-space: nowrap;
+			line-height: 30px;
 		}
 		.email_templete_content p {
-			
+			margin: 8px 0 12px;
+			color: #6D6E71;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
 		}
 		ul.email_templete_content_list li {
-			
+			margin-bottom: 10px;
 		}
 		ul.email_templete_content_list li a {
-			
+			position: relative;
+			color: #231F20;
+			font-weight: 500;
+			line-height: 24px;
+			display: block;
+			font-size: 12px;
 		}
 		ul.email_templete_content_list li a img {
-			
+			max-width: 18px;
+			float: left;
+			margin-top: 2px;
+			margin-right: 6px;
 		}
 		ul.email_templete_icons {
-			
+			display: block;
+			border-top: 2px solid #d4af36;
+			padding-top: 15px;
+			float: left;
+			width: 100%;
 		}
 		ul.email_templete_icons li {
-			
+			margin: 0 10px 0 0;
+			display: inline-block;
+			float: left;
 		}
 		ul.email_templete_icons li a {
-			
+			display: inline-block;
+			float: left;
 		}
 		ul.email_templete_icons li a img {
-			
-		}*/
+			width: 26px;
+			height: 26px;
+			float: left;
+		}
 	</style>
 </head>
 <body>
-	<div class="email_templete" style="display: table;box-sizing: border-box;">
-		<table style="width: 100%;border-collapse: collapse;">
+	<div class="email_templete">
+		<table>
 			<tr>
-				<td class="image_row" style="padding-right: 30px;">
-					<img src="logo.png" class="logo_image" style="width: 200px;float: left;">
+				<td class="image_row">
+					<img src="logo.png" class="logo_image">
 				</td>
-				<td class="content_row" style="padding-left: 30px;border-left: 2px solid #d4af36;">
+				<td class="content_row">
 					<div class="email_templete_content">
-						<h1 style="color: #D3AF37;font-size: 24px;font-weight: 500;letter-spacing: 1px;margin: 0;white-space: nowrap;line-height: 30px;">ALEX PEDLEY</h1>
-						<p style="margin: 8px 0 12px;color: #6D6E71;font-weight: 400;font-size: 18px;line-height: 22px;">DIRECTOR</p>
+						<h1>ALEX PEDLEY</h1>
+						<p>DIRECTOR</p>
 						<ul class="email_templete_content_list">
-							<li style="margin-bottom: 10px;">
-								<a href="tel:+447834685780" style="position: relative;color: #231F20;font-weight: 500;line-height: 24px;display: block;font-size: 12px;text-decoration: none;"><img src="call_icon.png" style="max-width: 18px;float: left;margin-top: 2px;margin-right: 6px;">+44 7834 685780</a>
+							<li>
+								<a href="tel:+447834685780" style="text-decoration:none;"><img src="call_icon.png">+44 7834 685780</a>
 							</li>
-							<li style="margin-bottom: 10px;">
-								<a href="www.platform-oms.co.uk" style="position: relative;color: #231F20;font-weight: 500;line-height: 24px;display: block;font-size: 12px;text-decoration: none;"><img src="map_icon.png" style="max-width: 18px;float: left;margin-top: 2px;margin-right: 6px;">www.platform-oms.co.uk</a>
+							<li>
+								<a href="www.platform-oms.co.uk" style="text-decoration:none;"><img src="map_icon.png">www.platform-oms.co.uk</a>
 							</li>
 						</ul>
-						<ul class="email_templete_icons" style="display: block;border-top: 2px solid #d4af36;padding-top: 15px;float: left;width: 100%;">
-							<li style="margin: 0 10px 0 0;display: inline-block;float: left;">
-								<a href="#" style="display: inline-block;float: left;"><img style="width: 26px;height: 26px;float: left;" src="in_icon.png"></a>
+						<ul class="email_templete_icons">
+							<li>
+								<a href="#"><img src="in_icon.png"></a>
 							</li>
-							<li style="margin: 0 10px 0 0;display: inline-block;float: left;">
-								<a href="#" style="display: inline-block;float: left;"><img style="width: 26px;height: 26px;float: left;" src="twitter_icon.png"></a>
+							<li>
+								<a href="#"><img src="twitter_icon.png"></a>
 							</li>
-							<li style="margin: 0 10px 0 0;display: inline-block;float: left;">
-								<a href="#" style="display: inline-block;float: left;"><img style="width: 26px;height: 26px;float: left;" src="fb_icon.png"></a>
+							<li>
+								<a href="#"><img src="fb_icon.png"></a>
 							</li>
-							<li style="margin: 0 10px 0 0;display: inline-block;float: left;">
-								<a href="#" style="display: inline-block;float: left;"><img style="width: 26px;height: 26px;float: left;" src="insta_icon.png"></a>
+							<li>
+								<a href="#"><img src="insta_icon.png"></a>
 							</li>
 						</ul>
 					</div>
