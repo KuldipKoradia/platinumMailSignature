@@ -19,8 +19,6 @@
 			padding: 0;
 		}
 		.email_templete {
-			width: 435px;
-			/*height: 191px;*/
 			display: table;
 			box-sizing: border-box;
 		}
@@ -45,17 +43,20 @@
 			font-weight: 500;
 			letter-spacing: 1px;
 			margin: 0;
+			white-space: nowrap;
+			line-height: 30px;
 		}
 		.email_templete_content p {
 			margin: 8px 0 12px;
 			color: #6D6E71;
 			font-weight: 400;
 			font-size: 18px;
+			line-height: 22px;
 		}
 		ul.email_templete_content_list li {
 			margin-bottom: 10px;
 		}
-		ul.email_templete_content_list li p {
+		ul.email_templete_content_list li a {
 			position: relative;
 			color: #231F20;
 			font-weight: 500;
@@ -64,7 +65,7 @@
 			display: block;
 			font-size: 12px;
 		}
-		ul.email_templete_content_list li p img {
+		ul.email_templete_content_list li a img {
 			max-width: 18px;
 			float: left;
 			margin-top: 2px;
@@ -74,6 +75,7 @@
 			display: block;
 			border-top: 2px solid #d4af36;
 			padding-top: 15px;
+			float: left;
 		}
 		ul.email_templete_icons li {
 			margin: 0 10px 0 0;
@@ -82,12 +84,12 @@
 		}
 		ul.email_templete_icons li a {
 			display: inline-block;
-			width: 26px;
-			height: 25px;
 			float: left;
 		}
 		ul.email_templete_icons li a img {
-			max-width: 26px;
+			width: 26px;
+			height: 26px;
+			float: left;
 		}
 	</style>
 </head>
@@ -104,10 +106,10 @@
 						<p>DIRECTOR</p>
 						<ul class="email_templete_content_list">
 							<li>
-								<p><img src="call_icon.png">+44 7834 685780</p>
+								<a href="tel:+447834685780"><img src="call_icon.png">+44 7834 685780</a>
 							</li>
 							<li>
-								<p><img src="map_icon.png">www.platform-oms.co.uk</p>
+								<a href="www.platform-oms.co.uk"><img src="map_icon.png">www.platform-oms.co.uk</a>
 							</li>
 						</ul>
 						<ul class="email_templete_icons">
