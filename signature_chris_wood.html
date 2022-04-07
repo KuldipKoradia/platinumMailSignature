@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		body *{
+			font-family: 'Open Sans', sans-serif;
+			box-sizing: border-box;
+		}
+		ul, li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.email_templete {
+			display: table;
+			box-sizing: border-box;
+		}
+		.email_templete table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		.email_templete table td.content_row {
+			padding-left: 30px;
+			border-left: 2px solid #808285;
+		}
+		.email_templete table td.image_row {
+			padding-right: 30px;
+		}
+		.email_templete img.logo_image {
+			width: 200px;
+			float: left;
+		}
+		.email_templete_content {
+			display: table;
+			width: 220px;
+		}
+		.email_templete_content h1 {
+			color: #231F20;
+			font-size: 24px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			margin: 0;
+			white-space: nowrap;
+			line-height: 30px;
+		}
+		.email_templete_content p {
+			margin: 8px 0 12px;
+			color: #6D6E71;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		ul.email_templete_content_list li {
+			margin-bottom: 10px;
+		}
+		ul.email_templete_content_list li a {
+			position: relative;
+			color: #231F20;
+			font-weight: 500;
+			text-decoration: none;
+			line-height: 24px;
+			display: block;
+			font-size: 12px;
+		}
+		ul.email_templete_content_list li a img {
+			max-width: 18px;
+			float: left;
+			margin-top: 2px;
+			margin-right: 6px;
+		}
+		ul.email_templete_icons {
+			display: block;
+			border-top: 2px solid #808285;
+			padding-top: 15px;
+			float: left;
+			width: 100%;
+		}
+		ul.email_templete_icons li {
+			margin: 0 10px 0 0;
+			display: inline-block;
+			float: left;
+		}
+		ul.email_templete_icons li a {
+			display: inline-block;
+			float: left;
+		}
+		ul.email_templete_icons li a img {
+			width: 26px;
+			height: 26px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="email_templete">
+		<table>
+			<tr>
+				<td class="image_row">
+					<img src="logo_2.png" class="logo_image">
+				</td>
+				<td class="content_row">
+					<div class="email_templete_content">
+						<h1>CHRIS WOOD</h1>
+						<p>DIRECTOR</p>
+						<ul class="email_templete_content_list">
+							<li>
+								<a href="tel:+447935493735"><img src="call_icon_2.png">+44 7935 493735</a>
+							</li>
+							<li>
+								<a href="https://platinumrailservices.co.uk" target="_blank"><img src="map_icon_2.png">www.platinumrailservices.co.uk</a>
+							</li>
+						</ul>
+						<ul class="email_templete_icons">
+							<li>
+								<a href="#" target="_blank"><img src="in_icon_2.png"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="twitter_icon_2.png"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="fb_icon_2.png"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="insta_icon_2.png"></a>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
